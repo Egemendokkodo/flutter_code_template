@@ -99,7 +99,7 @@ flutter run -d chrome
 
 ## 🧩 Example: Adding a New Feature
 
-As an example, to add a `profile` feature, you would typically:
+As an example, to add a `profile page` feature, you would typically:
 
 1. Create `lib/feature/profile/` with the following folders:
    - `view/` – Screens (e.g. `profile_page.dart`)
