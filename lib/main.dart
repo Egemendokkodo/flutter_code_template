@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Template Project',
       theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
       initialRoute: AppRoutes.auth,
-      home: LoginPage(),
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }

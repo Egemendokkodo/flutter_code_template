@@ -1,20 +1,20 @@
 class CommonApiResponse<T> {
   final bool success;
-  final String? message;
   final T? data;
-  final int? statusCode;
+  final String? message;
+  final int statusCode;
 
   const CommonApiResponse({
     required this.success,
-    this.message,
     this.data,
-    this.statusCode,
+    this.message,
+    required this.statusCode,
   });
 
   factory CommonApiResponse.success(
     T data, {
     String? message,
-    int? statusCode,
+    required int statusCode,
   }) {
     return CommonApiResponse(
       success: true,
@@ -25,8 +25,8 @@ class CommonApiResponse<T> {
   }
 
   factory CommonApiResponse.failure({
-    String? message,
-    int? statusCode,
+    required String message,
+    required int statusCode,
   }) {
     return CommonApiResponse(
       success: false,
