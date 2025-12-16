@@ -97,8 +97,8 @@ flutter run -d chrome
 ---
 ## ⚠️ IMPORTANT! 
 
-In order to run this code properly you must do this 2 steps as well:
-  1- In `api_client.dart`, map and parse the API response to match your backend structure (e.g., status_code vs. statusCode, data vs. response).
+In order to run this code properly you must do this 2 steps as well:<br>
+  1- In `api_client.dart`, map and parse the API response to match your backend structure (e.g., status_code vs. statusCode, data vs. response).<br>
   2- (OPTIONAL) You may also customize `common_api_response.dart` to adjust success and error response handling according to your needs.
 
 ## 🧩 Example: Adding a New Feature
